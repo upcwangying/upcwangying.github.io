@@ -1099,7 +1099,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: #87daff;
 }
 .site-meta {
   margin: 0;
@@ -1114,12 +1114,11 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #fff;
-  background: #222;
+  color: #222;
   border-bottom: none;
 }
 .brand:hover {
-  color: #fff;
+  color: #87daff;
 }
 .logo {
   display: inline-block;
@@ -1132,7 +1131,7 @@ pre .javascript .function {
   vertical-align: top;
   line-height: 36px;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: bold;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
@@ -1205,7 +1204,6 @@ pre .javascript .function {
   display: block;
   font-size: 13px;
   line-height: inherit;
-  border-bottom: 1px solid transparent;
   transition-property: border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -1936,7 +1934,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #53ff91;
+  background: #ffa741;
 }
 .links-of-blogroll {
   font-size: 13px;
