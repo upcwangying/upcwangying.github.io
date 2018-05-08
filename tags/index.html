@@ -84,19 +84,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.0.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=0.0.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=0.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=0.0.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=0.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=0.0.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=0.0.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=0.0.2" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=0.0.1" color="#222">
 
 
 
@@ -118,7 +118,7 @@
 <meta property="og:url" content="http://www.upcwangying.com/tags/index.html">
 <meta property="og:site_name" content="个人主页">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-23T05:59:59.852Z">
+<meta property="og:updated_time" content="2018-05-08T14:06:18.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All tags">
 
@@ -129,7 +129,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '0.0.2',
+    version: '0.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
@@ -320,7 +320,7 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                目前共计 4 个标签
+                目前共计 1 个标签
             </div>
             <div class="tag-cloud-tags">
               <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a>
@@ -343,10 +343,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -400,7 +396,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -411,7 +407,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -623,45 +619,32 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=0.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=0.0.2"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.0.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=0.0.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=0.0.1"></script>
 
 
 
   
+  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.0.2"></script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.0.1"></script>
 
 
 
   
 
 
-  
-
-
-
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.0.1"></script>
 
 
 
   
 
 
-
-
+  
 
 
 
@@ -676,20 +659,62 @@
 
 
 
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
+    <style>
+      #comments .info {
+        display: none;
+      }
+    </style>
+  
+
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 's1JohiIKWHGCGG2yP37tKMzE-gzGzoHsz',
+        appKey: 'oeFVO8s5insGHASHlOcymXgB',
+        placeholder: '老铁, 不想留下您的足迹吗?',
+        avatar:'wavatar',
+        guest_info:guest,
+        pageSize:'15' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
 
   
 
   
 
   
+
+  
   
 
   
 
   
-  <script type="text/javascript" src="/js/src/js.cookie.js?v=0.0.2"></script>
-  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=0.0.2"></script>
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=0.0.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=0.0.1"></script>
 
 
   
