@@ -49,6 +49,11 @@
     <content type="text"></content>
   </entry>
   <entry>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[music]]></title>
     <url>%2Fmusics%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
