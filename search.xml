@@ -34,8 +34,28 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Videos]]></title>
+    <url>%2Fvideos%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[给孩子多一条回家的路]]></title>
+    <url>%2F404%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[All categories]]></title>
     <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fdocs%2Findex.html</url>
+    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScriptCSS预处理器LESS | SASS | Stylus | Stylus模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档包依赖管理工具Yarn中文网 | npm中文文档构建工具Grunt | gulp中文网JavaScript编译器BabelJavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档JavaScript代码检查工具ESLint框架Vuejs中文文档 | React中文文档 | React中文文档 | AngularJS中文文档组件库iView | Element | Ant Design | Cube UI | mpvue模板引擎EJS | Handlebars | Pug中文文档 | Liquid数据可视化ECharts中文文档 | AntV中文文档其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.cssNode.jsNodejs中文文档 | egg中文文档 | express中文文档 | axios工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档Vue项目QQ播放器 | 网易播放器(开发中) | 饿了么(开发中)React项目]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -44,28 +64,8 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fdocs%2Findex.html</url>
-    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScriptCSS预处理器LESS | SASS | Stylus | Stylus模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档包依赖管理工具Yarn中文网 | npm中文文档构建工具Grunt | gulp中文网JavaScript编译器BabelJavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档JavaScript代码检查工具ESLint框架Vuejs中文文档 | React中文文档 | React中文文档 | AngularJS中文文档组件库iView | Element | Ant Design | Cube UI | mpvue模板引擎EJS | Handlebars | Pug中文文档 | Liquid数据可视化ECharts中文文档 | AntV中文文档其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.cssNode.jsNodejs中文文档 | egg中文文档 | express中文文档 | axios工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档Vue项目QQ播放器 | 网易播放器(开发中) | 饿了么(开发中)React项目]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[给孩子多一条回家的路]]></title>
-    <url>%2F404%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Videos]]></title>
-    <url>%2Fvideos%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[All tags]]></title>
     <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Photos]]></title>
-    <url>%2Fphotos%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
