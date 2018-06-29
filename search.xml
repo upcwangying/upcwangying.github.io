@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[微信小程序之自定义组件开发]]></title>
-    <url>%2F2018%2F05%2F23%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>编程实战</category>
-      </categories>
-      <tags>
-        <tag>微信小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Nginx常用命令]]></title>
-    <url>%2F2018%2F05%2F19%2Fnginx-command%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>运维相关</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[centOS7在VirtualBox中装好后的网络连接问题]]></title>
     <url>%2F2018%2F05%2F19%2Fhello-linux%2F</url>
     <content type="text"><![CDATA[解决办法设置网络连接方式在VirtualBox中设置网卡连接方式：点“设置”，在弹出的界面中点“网络”，最后选择“连接方式”为“桥接网卡” 查看网络配置文件的名字1$ vi ifconfig -a 如果显示ifconfig：command not found，忽略此步 编辑网络配置文件用Vi编辑器打开配置文件，输入命令以下 1$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 就会看到下图红框部分。 按”Insert”键进入编辑模式，把ONBOOT=no改为ONBOOT=yes，然后按”Esc”键退出编辑模式，最后输入“:wq”按回车键保存并退出 重启网络服务。1$ service network restart]]></content>
@@ -39,9 +17,9 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fdocs%2Findex.html</url>
-    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScriptCSS预处理器LESS | SASS | Stylus | Stylus模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档包依赖管理工具Yarn中文网 | npm中文文档构建工具Grunt | gulp中文网JavaScript编译器BabelJavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档JavaScript代码检查工具ESLint框架Vuejs中文文档 | React中文文档 | React中文文档 | AngularJS中文文档组件库iView | Element | Ant Design | Cube UI | mpvue模板引擎EJS | Handlebars | Pug中文文档 | Liquid数据可视化ECharts中文文档 | AntV中文文档其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.cssNode.jsNodejs中文文档 | egg中文文档 | express中文文档 | axios工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档Vue项目QQ播放器 | 网易播放器(开发中) | 饿了么(开发中)React项目]]></content>
+    <title><![CDATA[music]]></title>
+    <url>%2Fmusics%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[All categories]]></title>
@@ -54,18 +32,18 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[Photos]]></title>
-    <url>%2Fphotos%2Findex.html</url>
+    <title><![CDATA[All tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[music]]></title>
-    <url>%2Fmusics%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[学习文档]]></title>
+    <url>%2Fdocs%2Findex.html</url>
+    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScriptCSS预处理器LESS | SASS | Stylus | Stylus模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档包依赖管理工具Yarn中文网 | npm中文文档构建工具Grunt | gulp中文网JavaScript编译器BabelJavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档JavaScript代码检查工具ESLint框架Vuejs中文文档 | React中文文档 | React中文文档 | AngularJS中文文档组件库iView | Element | Ant Design | Cube UI | mpvue模板引擎EJS | Handlebars | Pug中文文档 | Liquid数据可视化ECharts中文文档 | AntV中文文档其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.cssNode.jsNodejs中文文档 | egg中文文档 | express中文文档 | axios工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档Vue项目QQ播放器 | 网易播放器(开发中) | 饿了么(开发中)React项目]]></content>
   </entry>
   <entry>
-    <title><![CDATA[All tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
