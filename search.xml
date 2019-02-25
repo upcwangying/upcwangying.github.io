@@ -43,11 +43,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Photos]]></title>
-    <url>%2Fphotos%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[All tags]]></title>
     <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
@@ -55,6 +50,11 @@
   <entry>
     <title><![CDATA[Videos]]></title>
     <url>%2Fvideos%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
