@@ -54,9 +54,9 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[All tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
+    <title><![CDATA[music]]></title>
+    <url>%2Fmusics%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[Videos]]></title>
@@ -64,8 +64,8 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[music]]></title>
-    <url>%2Fmusics%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[All tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>
