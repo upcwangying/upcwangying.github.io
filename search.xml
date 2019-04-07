@@ -49,8 +49,8 @@
     <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScript CSS预处理器LESS | SASS | Stylus | Stylus 模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档 包依赖管理工具Yarn中文网 | npm中文文档 构建工具Grunt | gulp中文网 JavaScript编译器Babel JavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档 JavaScript代码检查工具ESLint 框架Vuejs中文文档 | React中文文档 | AngularJS中文文档 组件库iView | Element | Ant Design | Cube UI | mpvue 模板引擎EJS | Handlebars | Pug中文文档 | Liquid 数据可视化ECharts中文文档 | AntV中文文档 其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.css Node.jsNodejs中文文档 | Koa英文文档 | egg中文文档 | express中文文档 | axios 工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Photos]]></title>
-    <url>%2Fphotos%2Findex.html</url>
+    <title><![CDATA[All tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -59,13 +59,13 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Videos]]></title>
-    <url>%2Fvideos%2Findex.html</url>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[All tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[Videos]]></title>
+    <url>%2Fvideos%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
