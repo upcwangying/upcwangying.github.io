@@ -98,21 +98,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>music</title>
-    <url>/musics/index.html</url>
-    <content><![CDATA[<div class="aplayer" data-id="2214799155" data-server="netease" data-type="playlist" data-autoplay="true"></div>]]></content>
-  </entry>
-  <entry>
-    <title>All tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Photos</title>
-    <url>/photos/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>学习文档</title>
     <url>/docs/index.html</url>
     <content><![CDATA[<p><font color="Darkorange" size="4">HTML, CSS, JS</font><br><a href="http://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">HTML参考手册</a> | <a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="noopener">CSS参考手册</a> | <a href="http://www.w3school.com.cn/js/js_intro.asp" target="_blank" rel="noopener">JavaScript</a></p>
@@ -131,5 +116,20 @@
 <p><font color="Darkorange" size="4">Node.js</font><br><a href="http://nodejs.cn/api/" target="_blank" rel="noopener">Nodejs中文文档</a> | <a href="https://koajs.com/" target="_blank" rel="noopener">Koa英文文档</a> | <a href="https://eggjs.org/zh-cn/index.html" target="_blank" rel="noopener">egg中文文档</a> | <a href="http://expressjs.com/zh-cn/" target="_blank" rel="noopener">express中文文档</a> | <a href="https://github.com/axios/axios" target="_blank" rel="noopener">axios</a></p>
 <p><font color="Darkorange" size="4">工具</font><br><a href="http://www.nginx.cn/doc/" target="_blank" rel="noopener">Nginx中文文档</a> | <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">Git中文文档</a> | <a href="https://docs.docker-cn.com/" target="_blank" rel="noopener">Docker中文文档</a> | <a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown中文文档</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>music</title>
+    <url>/musics/index.html</url>
+    <content><![CDATA[<div class="aplayer" data-id="2214799155" data-server="netease" data-type="playlist" data-autoplay="true"></div>]]></content>
+  </entry>
+  <entry>
+    <title>Photos</title>
+    <url>/photos/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>All tags</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
