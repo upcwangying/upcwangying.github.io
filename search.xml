@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[GoLang基础语法]]></title>
+    <url>%2F2019%2F03%2F03%2FGoLang%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[变量定义从hello world入手1234567package mainimport "fmt"func main() &#123; fmt.Println("Hello World")&#125; 控制台输出：1Hello World 变量默认值123456789package mainimport "fmt"func main() &#123; var a int var s string fmt.Println(a, s)&#125; 控制台输出：10 注：s为””,故打印出来没有效果 如果想让””字符串显示，则代码如下：12345678910package mainimport "fmt"func main() &#123; var a int var s string fmt.Println(a, s) fmt.Printf("%d %q\n", a, s)&#125; 控制台输出：注：s为””,故打印出来没有效果120 0, &quot;&quot; 变量定义并初始化第一种方式123456789package mainimport "fmt"func main() &#123; var a, b int = 3, 4 var s string = "abc" fmt.Println(a, b, s)&#125; 控制台输出：13 4 abc 第二种方式12345678package mainimport "fmt"func main() &#123; var a, b, c, d = 3, 4, true, "def" fmt.Println(a, b, c, d)&#125; 控制台输出：13 4 true def 第三种方式12345678package mainimport "fmt"func main() &#123; a, b, c, d := 3, 4, true, "def" fmt.Println(a, b, c, d)&#125; 控制台输出：13 4 true def 如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用:=。代码如下：1234567891011package mainimport "fmt"var wy = 3var wyy = 4var ss = "3456"func main() &#123; fmt.Println(wy, wyy, ss)&#125; 还可以如下定义：12345678910111213package mainimport "fmt"var ( wy = 3 wyy = 4 ss = "3456" )func main() &#123; fmt.Println(wy, wyy, ss)&#125; 输出如下：13 4 3456 内置变量类型12345678910111213141516bool, string加u，代表无符号整数；不加u，代表有符号整数；不规定长度，与操作系统相关(u)int, (u)int8, (u)int16, (u)int32, (u)int64uintptr: 无符号整型，长度与操作系统相关，用于存放一个指针, ptr代表指针类型（Pointer）byte： 类似 uint8rune: 字符型，4个字节， 32位二进制位，类似 int32float32, float64complex64: 复数：实数和虚数为32位 float32complex128: 复数：实数和虚数为64位 float64 Golang中的复数1234567891011package mainimport ( "fmt" "math/cmplx")func main() &#123; c := 3 + 4i fmt.Println(cmplx.Abs(c))&#125; 欧拉公式123456789101112package mainimport ( "fmt" "math/cmplx" "math")func main() &#123; fmt.Println( cmplx.Exp(1i * math.Pi) + 1)&#125; 控制台输出1(0+1.2246467991473515e-16i) 类型转换类型转换是强制的，无隐式类型转换勾股定理1234567891011package mainimport ( "fmt" "math")func main() &#123; var a, b int = 3, 4 fmt.Println(math.Sqrt(float64(a*a + b*b)))&#125; 控制台输出15]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>GoLang</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python使用virtualenv搭建开发环境]]></title>
+    <url>%2F2018%2F07%2F02%2FPython%E4%BD%BF%E7%94%A8virtualenv%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[安装virtualenv1pip install virtualenv 或新建一个requirement.txt,文件内容如下1virtualenv 执行如下命令1pip install -r requirement.txt 如果网速太慢, 可使用豆瓣源加速,添加’-i 加速源URL’参数即可例如:1pip install -i https://pypi.douban.com/simple/ virtualenv or1pip install -i https://pypi.douban.com/simple/ -r requirement.txt 新建环境在当前目录下新建一个djangotest的虚拟环境1virtualenv djangotest 指定Python版本为Python3.61virtualenv -p D:\Program Files\Python\Python36\python.exe djangotest1]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[青岛]]></title>
+    <url>%2F2018%2F05%2F26%2F%E9%9D%92%E5%B2%9B%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[青岛灵山湾]]></title>
+    <url>%2F2018%2F05%2F25%2F%E9%9D%92%E5%B2%9B%E7%81%B5%E5%B1%B1%E6%B9%BE%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[centOS7在VirtualBox中装好后的网络连接问题]]></title>
+    <url>%2F2018%2F05%2F19%2Fhello-linux%2F</url>
+    <content type="text"><![CDATA[解决办法设置网络连接方式在VirtualBox中设置网卡连接方式：点“设置”，在弹出的界面中点“网络”，最后选择“连接方式”为“桥接网卡” 查看网络配置文件的名字1$ vi ifconfig -a 如果显示ifconfig：command not found，忽略此步 编辑网络配置文件用Vi编辑器打开配置文件，输入命令以下 1$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 就会看到下图红框部分。 按”Insert”键进入编辑模式，把ONBOOT=no改为ONBOOT=yes，然后按”Esc”键退出编辑模式，最后输入“:wq”按回车键保存并退出 重启网络服务。1$ service network restart]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[给孩子多一条回家的路]]></title>
+    <url>%2F404%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[All categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[music]]></title>
+    <url>%2Fmusics%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[All tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[学习文档]]></title>
+    <url>%2Fdocs%2Findex.html</url>
+    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScript CSS预处理器LESS | SASS | Stylus | Stylus 模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档 包依赖管理工具Yarn中文网 | npm中文文档 构建工具Grunt | gulp中文网 JavaScript编译器Babel JavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档 JavaScript代码检查工具ESLint 框架Vuejs中文文档 | React中文文档 | AngularJS中文文档 组件库iView | Element | Ant Design | Cube UI | mpvue 模板引擎EJS | Handlebars | Pug中文文档 | Liquid 数据可视化ECharts中文文档 | AntV中文文档 其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.css Node.jsNodejs中文文档 | Koa英文文档 | egg中文文档 | express中文文档 | axios 工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+</search>
