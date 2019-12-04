@@ -1,32 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>GoLang基础语法</title>
-    <url>/2019/03/03/GoLang%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h2><h3 id="从hello-world入手"><a href="#从hello-world入手" class="headerlink" title="从hello world入手"></a>从hello world入手</h3><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Hello World</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h3 id="变量默认值"><a href="#变量默认值" class="headerlink" title="变量默认值"></a>变量默认值</h3><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a <span class="keyword">int</span></span><br><span class="line">	<span class="keyword">var</span> s <span class="keyword">string</span></span><br><span class="line">	fmt.Println(a, s)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure></p>
-<p>注：s为””,故打印出来没有效果</p>
-<p>如果想让””字符串显示，则代码如下：<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a <span class="keyword">int</span></span><br><span class="line">	<span class="keyword">var</span> s <span class="keyword">string</span></span><br><span class="line">	fmt.Println(a, s)</span><br><span class="line">	fmt.Printf(<span class="string">"%d %q\n"</span>, a, s)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>控制台输出：<br>注：s为””,故打印出来没有效果<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 </span><br><span class="line">0, &quot;&quot;</span><br></pre></td></tr></table></figure></p>
-<h3 id="变量定义并初始化"><a href="#变量定义并初始化" class="headerlink" title="变量定义并初始化"></a>变量定义并初始化</h3><h4 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a, b <span class="keyword">int</span> = <span class="number">3</span>, <span class="number">4</span></span><br><span class="line">	<span class="keyword">var</span> s <span class="keyword">string</span> = <span class="string">"abc"</span></span><br><span class="line">	fmt.Println(a, b, s)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3 4 abc</span><br></pre></td></tr></table></figure></p>
-<h4 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a, b, c, d = <span class="number">3</span>, <span class="number">4</span>, <span class="literal">true</span>, <span class="string">"def"</span></span><br><span class="line">	fmt.Println(a, b, c, d)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3 4 true def</span><br></pre></td></tr></table></figure></p>
-<h4 id="第三种方式"><a href="#第三种方式" class="headerlink" title="第三种方式"></a>第三种方式</h4><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	a, b, c, d := <span class="number">3</span>, <span class="number">4</span>, <span class="literal">true</span>, <span class="string">"def"</span></span><br><span class="line">	fmt.Println(a, b, c, d)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3 4 true def</span><br></pre></td></tr></table></figure></p>
-<h4 id="如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用-。"><a href="#如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用-。" class="headerlink" title="如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用:=。"></a>如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用:=。</h4><p>代码如下：<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> wy  = <span class="number">3</span></span><br><span class="line"><span class="keyword">var</span> wyy = <span class="number">4</span></span><br><span class="line"><span class="keyword">var</span> ss = <span class="string">"3456"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	fmt.Println(wy, wyy, ss)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>还可以如下定义：<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> (</span><br><span class="line">	wy  = <span class="number">3</span></span><br><span class="line">    wyy = <span class="number">4</span></span><br><span class="line">    ss = <span class="string">"3456"</span></span><br><span class="line"> )</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	fmt.Println(wy, wyy, ss)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>输出如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3 4 3456</span><br></pre></td></tr></table></figure></p>
-<h2 id="内置变量类型"><a href="#内置变量类型" class="headerlink" title="内置变量类型"></a>内置变量类型</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bool, string</span><br><span class="line"></span><br><span class="line">加u，代表无符号整数；不加u，代表有符号整数；不规定长度，与操作系统相关</span><br><span class="line">(u)int, (u)int8, (u)int16, (u)int32, (u)int64</span><br><span class="line"></span><br><span class="line">uintptr: 无符号整型，长度与操作系统相关，用于存放一个指针, ptr代表指针类型（Pointer）</span><br><span class="line"></span><br><span class="line">byte： 类似 uint8</span><br><span class="line"></span><br><span class="line">rune: 字符型，4个字节， 32位二进制位，类似 int32</span><br><span class="line"></span><br><span class="line">float32, float64</span><br><span class="line"></span><br><span class="line">complex64: 复数：实数和虚数为32位 float32</span><br><span class="line"></span><br><span class="line">complex128: 复数：实数和虚数为64位 float64</span><br></pre></td></tr></table></figure>
-<p>Golang中的复数<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"math/cmplx"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	c := <span class="number">3</span> + <span class="number">4i</span></span><br><span class="line">	fmt.Println(cmplx.Abs(c))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>欧拉公式<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"math/cmplx"</span></span><br><span class="line">	<span class="string">"math"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	fmt.Println(</span><br><span class="line">    		cmplx.Exp(<span class="number">1i</span> * math.Pi) + <span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>控制台输出<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(0+1.2246467991473515e-16i)</span><br></pre></td></tr></table></figure></p>
-<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><h4 id="类型转换是强制的，无隐式类型转换"><a href="#类型转换是强制的，无隐式类型转换" class="headerlink" title="类型转换是强制的，无隐式类型转换"></a>类型转换是强制的，无隐式类型转换</h4><p>勾股定理<br><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"math"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a, b <span class="keyword">int</span> = <span class="number">3</span>, <span class="number">4</span></span><br><span class="line">	fmt.Println(math.Sqrt(<span class="keyword">float64</span>(a*a + b*b)))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>控制台输出<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure></p>
-]]></content>
+    <title><![CDATA[GoLang基础语法]]></title>
+    <url>%2F2019%2F03%2F03%2FGoLang%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[变量定义从hello world入手1234567package mainimport "fmt"func main() &#123; fmt.Println("Hello World")&#125; 控制台输出：1Hello World 变量默认值123456789package mainimport "fmt"func main() &#123; var a int var s string fmt.Println(a, s)&#125; 控制台输出：10 注：s为””,故打印出来没有效果 如果想让””字符串显示，则代码如下：12345678910package mainimport "fmt"func main() &#123; var a int var s string fmt.Println(a, s) fmt.Printf("%d %q\n", a, s)&#125; 控制台输出：注：s为””,故打印出来没有效果120 0, &quot;&quot; 变量定义并初始化第一种方式123456789package mainimport "fmt"func main() &#123; var a, b int = 3, 4 var s string = "abc" fmt.Println(a, b, s)&#125; 控制台输出：13 4 abc 第二种方式12345678package mainimport "fmt"func main() &#123; var a, b, c, d = 3, 4, true, "def" fmt.Println(a, b, c, d)&#125; 控制台输出：13 4 true def 第三种方式12345678package mainimport "fmt"func main() &#123; a, b, c, d := 3, 4, true, "def" fmt.Println(a, b, c, d)&#125; 控制台输出：13 4 true def 如果是在包内定义变量而非func中定义变量，不能使用使用第三种方式，即不能使用:=。代码如下：1234567891011package mainimport "fmt"var wy = 3var wyy = 4var ss = "3456"func main() &#123; fmt.Println(wy, wyy, ss)&#125; 还可以如下定义：12345678910111213package mainimport "fmt"var ( wy = 3 wyy = 4 ss = "3456" )func main() &#123; fmt.Println(wy, wyy, ss)&#125; 输出如下：13 4 3456 内置变量类型12345678910111213141516bool, string加u，代表无符号整数；不加u，代表有符号整数；不规定长度，与操作系统相关(u)int, (u)int8, (u)int16, (u)int32, (u)int64uintptr: 无符号整型，长度与操作系统相关，用于存放一个指针, ptr代表指针类型（Pointer）byte： 类似 uint8rune: 字符型，4个字节， 32位二进制位，类似 int32float32, float64complex64: 复数：实数和虚数为32位 float32complex128: 复数：实数和虚数为64位 float64 Golang中的复数1234567891011package mainimport ( "fmt" "math/cmplx")func main() &#123; c := 3 + 4i fmt.Println(cmplx.Abs(c))&#125; 欧拉公式123456789101112package mainimport ( "fmt" "math/cmplx" "math")func main() &#123; fmt.Println( cmplx.Exp(1i * math.Pi) + 1)&#125; 控制台输出1(0+1.2246467991473515e-16i) 类型转换类型转换是强制的，无隐式类型转换勾股定理1234567891011package mainimport ( "fmt" "math")func main() &#123; var a, b int = 3, 4 fmt.Println(math.Sqrt(float64(a*a + b*b)))&#125; 控制台输出15]]></content>
       <categories>
         <category>编程语言</category>
       </categories>
@@ -35,16 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Python使用virtualenv搭建开发环境</title>
-    <url>/2018/07/02/Python%E4%BD%BF%E7%94%A8virtualenv%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<h2 id="安装virtualenv"><a href="#安装virtualenv" class="headerlink" title="安装virtualenv"></a>安装virtualenv</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure>
-<p>或<br>新建一个requirement.txt,文件内容如下<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">virtualenv</span><br></pre></td></tr></table></figure></p>
-<p>执行如下命令<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -r requirement.txt</span><br></pre></td></tr></table></figure></p>
-<p>如果网速太慢, 可使用豆瓣源加速,添加’-i 加速源URL’参数即可<br>例如:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -i https://pypi.douban.com/simple/ virtualenv</span><br></pre></td></tr></table></figure></p>
-<p>or<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -i https://pypi.douban.com/simple/ -r requirement.txt</span><br></pre></td></tr></table></figure></p>
-<h2 id="新建环境"><a href="#新建环境" class="headerlink" title="新建环境"></a>新建环境</h2><p>在当前目录下新建一个djangotest的虚拟环境<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">virtualenv djangotest</span><br></pre></td></tr></table></figure></p>
-<p>指定Python版本为Python3.6<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">virtualenv -p D:\Program Files\Python\Python36\python.exe djangotest1</span><br></pre></td></tr></table></figure></p>
-]]></content>
+    <title><![CDATA[Python使用virtualenv搭建开发环境]]></title>
+    <url>%2F2018%2F07%2F02%2FPython%E4%BD%BF%E7%94%A8virtualenv%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[安装virtualenv1pip install virtualenv 或新建一个requirement.txt,文件内容如下1virtualenv 执行如下命令1pip install -r requirement.txt 如果网速太慢, 可使用豆瓣源加速,添加’-i 加速源URL’参数即可例如:1pip install -i https://pypi.douban.com/simple/ virtualenv or1pip install -i https://pypi.douban.com/simple/ -r requirement.txt 新建环境在当前目录下新建一个djangotest的虚拟环境1virtualenv djangotest 指定Python版本为Python3.61virtualenv -p D:\Program Files\Python\Python36\python.exe djangotest1]]></content>
       <categories>
         <category>编程语言</category>
       </categories>
@@ -53,31 +23,19 @@
       </tags>
   </entry>
   <entry>
-    <title>青岛</title>
-    <url>/2018/05/26/%E9%9D%92%E5%B2%9B/</url>
-    <content><![CDATA[]]></content>
+    <title><![CDATA[青岛]]></title>
+    <url>%2F2018%2F05%2F26%2F%E9%9D%92%E5%B2%9B%2F</url>
+    <content type="text"></content>
   </entry>
   <entry>
-    <title>青岛灵山湾</title>
-    <url>/2018/05/25/%E9%9D%92%E5%B2%9B%E7%81%B5%E5%B1%B1%E6%B9%BE/</url>
-    <content><![CDATA[<p><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/13c7aab9-581c-47cd-be96-40abf5306faf.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/13feb600-3d6d-45d7-8536-7c53da0c4245.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/2d7d09da-4506-4286-b5fa-df3197ee78b9.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/40cba1f6-19a2-490e-8a9c-c422aedc6f53.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/65b78f0a-5c0a-49e0-9357-51efd3543318.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/6b638090-061d-4d32-bc15-585a9e7192a1.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/72d16eb5-1a48-4219-b10b-ab2876fddc1b.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/91083802-60c6-4229-9d17-f87b54ecd500.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/ab741793-b69f-4276-b8ff-e346bb3df6c9.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/c483203e-1e6a-45f4-9a6f-67159ba2dd19.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/c6b73812-0cd7-4a9d-97ba-8efea38d1c93.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/e67fa88d-e309-4c6b-9583-627df70486be.jpg" alt><br><img src="https://cdn.upcwangying.com/photos/20180601/LingShanBay/1f31ac7c-8534-4664-9f3a-dcbcb61d720f.jpg" alt></p>
-]]></content>
+    <title><![CDATA[青岛灵山湾]]></title>
+    <url>%2F2018%2F05%2F25%2F%E9%9D%92%E5%B2%9B%E7%81%B5%E5%B1%B1%E6%B9%BE%2F</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>centOS7在VirtualBox中装好后的网络连接问题</title>
-    <url>/2018/05/19/hello-linux/</url>
-    <content><![CDATA[<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="设置网络连接方式"><a href="#设置网络连接方式" class="headerlink" title="设置网络连接方式"></a>设置网络连接方式</h3><p>在VirtualBox中设置网卡连接方式：点“设置”，在弹出的界面中点“网络”，最后选择“连接方式”为“桥接网卡”</p>
-<p><img src="/images/hello-linux/setting.png" alt="Alt text"></p>
-<a id="more"></a>
-<h3 id="查看网络配置文件的名字"><a href="#查看网络配置文件的名字" class="headerlink" title="查看网络配置文件的名字"></a>查看网络配置文件的名字</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ vi ifconfig -a</span><br></pre></td></tr></table></figure>
-<p>如果显示ifconfig：command not found，忽略此步</p>
-<h3 id="编辑网络配置文件"><a href="#编辑网络配置文件" class="headerlink" title="编辑网络配置文件"></a>编辑网络配置文件</h3><p>用Vi编辑器打开配置文件，输入命令以下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3</span><br></pre></td></tr></table></figure>
-<p>就会看到下图红框部分。</p>
-<p><img src="/images/hello-linux/setting1.png" alt="Alt text"></p>
-<p>按”Insert”键进入编辑模式，把ONBOOT=no改为ONBOOT=yes，然后按”Esc”键退出编辑模式，最后输入“:wq”按回车键保存并退出</p>
-<h3 id="重启网络服务。"><a href="#重启网络服务。" class="headerlink" title="重启网络服务。"></a>重启网络服务。</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ service network restart</span><br></pre></td></tr></table></figure>
-]]></content>
+    <title><![CDATA[centOS7在VirtualBox中装好后的网络连接问题]]></title>
+    <url>%2F2018%2F05%2F19%2Fhello-linux%2F</url>
+    <content type="text"><![CDATA[解决办法设置网络连接方式在VirtualBox中设置网卡连接方式：点“设置”，在弹出的界面中点“网络”，最后选择“连接方式”为“桥接网卡” 查看网络配置文件的名字1$ vi ifconfig -a 如果显示ifconfig：command not found，忽略此步 编辑网络配置文件用Vi编辑器打开配置文件，输入命令以下 1$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 就会看到下图红框部分。 按”Insert”键进入编辑模式，把ONBOOT=no改为ONBOOT=yes，然后按”Esc”键退出编辑模式，最后输入“:wq”按回车键保存并退出 重启网络服务。1$ service network restart]]></content>
       <categories>
         <category>操作系统</category>
       </categories>
@@ -86,50 +44,33 @@
       </tags>
   </entry>
   <entry>
-    <title>给孩子多一条回家的路</title>
-    <url>/404/index.html</url>
-    <content><![CDATA[<p><script src="https://cdn.upcwangying.com/js/Lost.min.js"></script></p>
-<div class="box alt" data-url="https://api.chenyifaer.com/v1/losts" id="lost-children-wrapper"></div>
-]]></content>
+    <title><![CDATA[给孩子多一条回家的路]]></title>
+    <url>%2F404%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>All categories</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
+    <title><![CDATA[All categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
-    <title>学习文档</title>
-    <url>/docs/index.html</url>
-    <content><![CDATA[<p><font color="Darkorange" size="4">HTML, CSS, JS</font><br><a href="http://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">HTML参考手册</a> | <a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="noopener">CSS参考手册</a> | <a href="http://www.w3school.com.cn/js/js_intro.asp" target="_blank" rel="noopener">JavaScript</a></p>
-<p><font color="Darkorange" size="4">CSS预处理器</font><br><a href="http://www.bootcss.com/p/lesscss/#synopsis" target="_blank" rel="noopener">LESS</a> | <a href="https://www.sasscss.com/" target="_blank" rel="noopener">SASS</a> | <a href="https://stylus.bootcss.com/" target="_blank" rel="noopener">Stylus</a> | <a href="http://www.zhangxinxu.com/jq/stylus/" target="_blank" rel="noopener">Stylus</a></p>
-<p><font color="Darkorange" size="4">模块打包工具</font><br><a href="https://doc.webpack-china.org/concepts/" target="_blank" rel="noopener">Webpack中文文档</a> | <a href="http://www.rollupjs.com/" target="_blank" rel="noopener">Rollup中文文档</a> | <a href="https://www.parceljs.cn/" target="_blank" rel="noopener">Parcel中文文档</a></p>
-<p><font color="Darkorange" size="4">包依赖管理工具</font><br><a href="https://yarn.bootcss.com/" target="_blank" rel="noopener">Yarn中文网</a> | <a href="https://www.npmjs.com.cn/" target="_blank" rel="noopener">npm中文文档</a></p>
-<p><font color="Darkorange" size="4">构建工具</font><br><a href="https://gruntjs.com/" target="_blank" rel="noopener">Grunt</a> | <a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp中文网</a></p>
-<p><font color="Darkorange" size="4">JavaScript编译器</font><br><a href="https://babel.bootcss.com/" target="_blank" rel="noopener">Babel</a></p>
-<p><font color="Darkorange" size="4">JavaScript工具库</font><br><a href="https://www.jquery123.com/" target="_blank" rel="noopener">jQuery中文文档</a> | <a href="http://www.bootcss.com/p/underscore/" target="_blank" rel="noopener">Underscore.js中文文档</a> | <a href="https://www.lodashjs.com/" target="_blank" rel="noopener">Lodash中文文档</a></p>
-<p><font color="Darkorange" size="4">JavaScript代码检查工具</font><br><a href="https://eslint.bootcss.com/" target="_blank" rel="noopener">ESLint</a></p>
-<p><font color="Darkorange" size="4">框架</font><br><a href="https://cn.vuejs.org/v2/api/" target="_blank" rel="noopener">Vuejs中文文档</a> | <a href="https://react.docschina.org/" target="_blank" rel="noopener">React中文文档</a> | <a href="http://www.angularjs.net.cn/" target="_blank" rel="noopener">AngularJS中文文档</a></p>
-<p><font color="Darkorange" size="4">组件库</font><br><a href="https://www.iviewui.com/" target="_blank" rel="noopener">iView</a> | <a href="http://element-cn.eleme.io/#/zh-CN" target="_blank" rel="noopener">Element</a> | <a href="https://ant.design/index-cn" target="_blank" rel="noopener">Ant Design</a> | <a href="https://didi.github.io/cube-ui/#/zh-CN" target="_blank" rel="noopener">Cube UI</a> | <a href="http://mpvue.com/" target="_blank" rel="noopener">mpvue</a></p>
-<p><font color="Darkorange" size="4">模板引擎</font><br><a href="https://ejs.bootcss.com/" target="_blank" rel="noopener">EJS</a> | <a href="https://handlebars.bootcss.com/" target="_blank" rel="noopener">Handlebars</a> | <a href="https://pug.bootcss.com" target="_blank" rel="noopener">Pug中文文档</a> | <a href="https://liquid.bootcss.com/" target="_blank" rel="noopener">Liquid</a></p>
-<p><font color="Darkorange" size="4">数据可视化</font><br><a href="http://echarts.baidu.com/index.html" target="_blank" rel="noopener">ECharts中文文档</a> | <a href="https://antv.alipay.com/zh-cn/index.html" target="_blank" rel="noopener">AntV中文文档</a></p>
-<p><font color="Darkorange" size="4">其他</font><br><a href="https://es6.upcwangying.com/" target="_blank" rel="noopener">es6</a> | <a href="https://www.postcss.com.cn/" target="_blank" rel="noopener">PostCSS</a> | <a href="http://www.fontawesome.com.cn/faicons/" target="_blank" rel="noopener">Font Awesome中文网</a> | <a href="http://www.bootcss.com/p/layoutit/" target="_blank" rel="noopener">Bootstrap可视化布局系统</a> | <a href="https://github.com/necolas/normalize.css/" target="_blank" rel="noopener">normalize.css</a></p>
-<p><font color="Darkorange" size="4">Node.js</font><br><a href="http://nodejs.cn/api/" target="_blank" rel="noopener">Nodejs中文文档</a> | <a href="https://koajs.com/" target="_blank" rel="noopener">Koa英文文档</a> | <a href="https://eggjs.org/zh-cn/index.html" target="_blank" rel="noopener">egg中文文档</a> | <a href="http://expressjs.com/zh-cn/" target="_blank" rel="noopener">express中文文档</a> | <a href="https://github.com/axios/axios" target="_blank" rel="noopener">axios</a></p>
-<p><font color="Darkorange" size="4">工具</font><br><a href="http://www.nginx.cn/doc/" target="_blank" rel="noopener">Nginx中文文档</a> | <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">Git中文文档</a> | <a href="https://docs.docker-cn.com/" target="_blank" rel="noopener">Docker中文文档</a> | <a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown中文文档</a></p>
-]]></content>
+    <title><![CDATA[学习文档]]></title>
+    <url>%2Fdocs%2Findex.html</url>
+    <content type="text"><![CDATA[HTML, CSS, JSHTML参考手册 | CSS参考手册 | JavaScript CSS预处理器LESS | SASS | Stylus | Stylus 模块打包工具Webpack中文文档 | Rollup中文文档 | Parcel中文文档 包依赖管理工具Yarn中文网 | npm中文文档 构建工具Grunt | gulp中文网 JavaScript编译器Babel JavaScript工具库jQuery中文文档 | Underscore.js中文文档 | Lodash中文文档 JavaScript代码检查工具ESLint 框架Vuejs中文文档 | React中文文档 | AngularJS中文文档 组件库iView | Element | Ant Design | Cube UI | mpvue 模板引擎EJS | Handlebars | Pug中文文档 | Liquid 数据可视化ECharts中文文档 | AntV中文文档 其他es6 | PostCSS | Font Awesome中文网 | Bootstrap可视化布局系统 | normalize.css Node.jsNodejs中文文档 | Koa英文文档 | egg中文文档 | express中文文档 | axios 工具Nginx中文文档 | Git中文文档 | Docker中文文档 | Markdown中文文档]]></content>
   </entry>
   <entry>
-    <title>music</title>
-    <url>/musics/index.html</url>
-    <content><![CDATA[<div class="aplayer" data-id="2214799155" data-server="netease" data-type="playlist" data-autoplay="true"></div>]]></content>
+    <title><![CDATA[music]]></title>
+    <url>%2Fmusics%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Photos</title>
-    <url>/photos/index.html</url>
-    <content><![CDATA[]]></content>
+    <title><![CDATA[Photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
-    <title>All tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <title><![CDATA[All tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>
