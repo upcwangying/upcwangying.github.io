@@ -152,6 +152,16 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
   <entry>
+    <title>Photos</title>
+    <url>/photos/index.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+  </entry>
+  <entry>
+    <title>All tags</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+  </entry>
+  <entry>
     <title>学习文档</title>
     <url>/docs/index.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><font color=Darkorange size=4>HTML, CSS, JS</font><br><a href="http://www.w3school.com.cn/tags/index.asp">HTML参考手册</a> | <a href="http://www.w3school.com.cn/cssref/index.asp">CSS参考手册</a> | <a href="http://www.w3school.com.cn/js/js_intro.asp">JavaScript</a></p>
@@ -170,15 +180,5 @@
 <p><font color=Darkorange size=4>Node.js</font><br><a href="http://nodejs.cn/api/">Nodejs中文文档</a> | <a href="https://koajs.com/">Koa英文文档</a> | <a href="https://eggjs.org/zh-cn/index.html">egg中文文档</a> | <a href="http://expressjs.com/zh-cn/">express中文文档</a> | <a href="https://github.com/axios/axios">axios</a></p>
 <p><font color=Darkorange size=4>工具</font><br><a href="http://www.nginx.cn/doc/">Nginx中文文档</a> | <a href="https://git-scm.com/book/zh/v2">Git中文文档</a> | <a href="https://docs.docker-cn.com/">Docker中文文档</a> | <a href="http://www.markdown.cn/">Markdown中文文档</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Photos</title>
-    <url>/photos/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-  </entry>
-  <entry>
-    <title>All tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
 </search>
